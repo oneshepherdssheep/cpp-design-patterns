@@ -20,36 +20,36 @@ examples that I devised for my understanding. If you want to get the exact examp
 
 ### Design Patterns Revisited
 
-* [Command](command/README.md)
-* [Flyweight](flyweight/README.md)
-* [Observer](observer/README.md)
-* [Prototype](prototype/README.md)
-* [Singleton](singleton/README.md)
-* [State](state/README.md)
+* [Command](command/README.md) ✅
+* [Flyweight](flyweight/README.md) 🚧
+* [Observer](observer/README.md) 🚧
+* [Prototype](prototype/README.md) 🚧
+* [Singleton](singleton/README.md) 🚧
+* [State](state/README.md) 🚧
 
 ### Sequencing Patterns
 
-* [Double Buffer](double_buffer/README.md)
-* [Game Loop](game_loop/README.md)
-* [Update Method](update_method/README.md)
+* [Double Buffer](double_buffer/README.md) 🚧
+* [Game Loop](game_loop/README.md) 🚧
+* [Update Method](update_method/README.md) 🚧
 
 ### Behavioral Patterns
 
-* [Bytecode](bytecode/README.md)
-* [Subclass Sandbox](subclass_sandbox/README.md)
-* [Type Object](type_object/README.md)
+* [Bytecode](bytecode/README.md) 🚧
+* [Subclass Sandbox](subclass_sandbox/README.md) 🚧
+* [Type Object](type_object/README.md) 🚧
 
 
 ### Decoupling Patterns
 
-* [Component](component/README.md)
-* [Event Queue](event_queue/README.md)
-* [Service Locator](service_locator/README.md)
+* [Component](component/README.md) 🚧
+* [Event Queue](event_queue/README.md) 🚧
+* [Service Locator](service_locator/README.md) 🚧
 
 
 ### Optimization Patterns
 
-* [Data Locality](data_locality/README.md)
-* [Dirty Flag](dirty_flag/README.md)
-* [Object Pool](object_pool/README.md)
-* [Spatial Partition](spatial_partition/README.md)
+* [Data Locality](data_locality/README.md) 🚧
+* [Dirty Flag](dirty_flag/README.md) 🚧
+* [Object Pool](object_pool/README.md) 🚧
+* [Spatial Partition](spatial_partition/README.md) 🚧
