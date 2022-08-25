@@ -20,36 +20,36 @@ examples that I devised for my understanding. If you want to get the exact examp
 
 ### Design Patterns Revisited
 
-* [Command](command/README.md) ✅
-* [Flyweight](flyweight/README.md) 🚧
-* [Observer](observer/README.md) 🚧
-* [Prototype](prototype/README.md) 🚧
-* [Singleton](singleton/README.md) 🚧
-* [State](state/README.md) 🚧
+* [Command](design_patterns_revisited/command/README.md) ✅
+* [Flyweight](design_patterns_revisited/flyweight/README.md) 🚧
+* [Observer](design_patterns_revisited/observer/README.md) 🚧
+* [Prototype](design_patterns_revisited/prototype/README.md) 🚧
+* [Singleton](design_patterns_revisited/singleton/README.md) 🚧
+* [State](design_patterns_revisited/state/README.md) 🚧
 
 ### Sequencing Patterns
 
-* [Double Buffer](double_buffer/README.md) 🚧
-* [Game Loop](game_loop/README.md) 🚧
-* [Update Method](update_method/README.md) 🚧
+* [Double Buffer](sequencing_patterns/double_buffer/README.md) 🚧
+* [Game Loop](sequencing_patterns/game_loop/README.md) 🚧
+* [Update Method](sequencing_patterns/update_method/README.md) 🚧
 
 ### Behavioral Patterns
 
-* [Bytecode](bytecode/README.md) 🚧
-* [Subclass Sandbox](subclass_sandbox/README.md) 🚧
-* [Type Object](type_object/README.md) 🚧
+* [Bytecode](behavioral_patterns/bytecode/README.md) 🚧
+* [Subclass Sandbox](behavioral_patterns/subclass_sandbox/README.md) 🚧
+* [Type Object](behavioral_patterns/type_object/README.md) 🚧
 
 
 ### Decoupling Patterns
 
-* [Component](component/README.md) 🚧
-* [Event Queue](event_queue/README.md) 🚧
-* [Service Locator](service_locator/README.md) 🚧
+* [Component](decoupling_patterns/component/README.md) 🚧
+* [Event Queue](decoupling_patterns/event_queue/README.md) 🚧
+* [Service Locator](decoupling_patterns/service_locator/README.md) 🚧
 
 
 ### Optimization Patterns
 
-* [Data Locality](data_locality/README.md) 🚧
-* [Dirty Flag](dirty_flag/README.md) 🚧
-* [Object Pool](object_pool/README.md) 🚧
-* [Spatial Partition](spatial_partition/README.md) 🚧
+* [Data Locality](optimization_patterns/data_locality/README.md) 🚧
+* [Dirty Flag](optimization_patterns/dirty_flag/README.md) 🚧
+* [Object Pool](optimization_patterns/object_pool/README.md) 🚧
+* [Spatial Partition](optimization_patterns/spatial_partition/README.md) 🚧
