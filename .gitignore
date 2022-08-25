@@ -1,0 +1,13 @@
+# ignore cmake-* folders
+cmake-*
+
+# ignore idea relatelders
+.idea*
+
+# ignore build artifacts
+*.o
+*.so
+*.a
+
+# ignore PVS-Studio folder
+.PVS-Studio
