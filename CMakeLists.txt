@@ -14,11 +14,13 @@ option(DP_PROTOTYPE "Prototype design pattern example implementation" OFF)
 option(DP_SINGLETON "Singleton design pattern example implementation" OFF)
 option(DP_STATE "State design pattern example implementation" OFF)
 
+option(CAR_LIBRARY "Car library" ON)
+
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # COMMON LIBRARY
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
+set(CAR_LIBRARY_NAME "carlib")
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # EXECUTABLE
@@ -46,4 +48,8 @@ endif()
 
 if(DP_STATE)
     add_subdirectory(state)
+endif()
+
+if(CAR_LIBRARY)
+    add_subdirectory(libraries)
 endif()
