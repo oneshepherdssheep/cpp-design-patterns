@@ -7,13 +7,13 @@
 #include "car_command.h"
 #include "car_command_handler.h"
 
-int main() {
-    Car toyoto(1);
+int main(int argc, char * argv[]) {
+    Car toyota(1);
     CarCommandHandler commandHandler;
     while(1){
         CommandV2<Car>* command = commandHandler.GetCurrentCommand();
         if(command!= nullptr){
-            command->execute(toyoto);
+            command->execute(toyota);
         }
         else{
             std::cout << "[command] no command received." << std::endl;

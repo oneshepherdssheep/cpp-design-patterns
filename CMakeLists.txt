@@ -10,7 +10,7 @@ set(CMAKE_CXX_STANDARD 17)
 # design patterns revisited
 
 option(ENABLE_COMMAND               "Enable Command example"                ON)
-option(ENABLE_FLYWEIGHT             "Enable Flyweight example"              OFF)
+option(ENABLE_FLYWEIGHT             "Enable Flyweight example"              ON)
 option(ENABLE_OBSERVER              "Enable Observer example"               OFF)
 option(ENABLE_PROTOTYPE             "Enable Prototype example"              OFF)
 option(ENABLE_SINGLETON             "Enable Singleton example"              OFF)
@@ -46,7 +46,11 @@ option(ENABLE_SERVICE_LOCATOR       "Enable Service Locator example"        OFF)
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 option(CAR_LIBRARY "Car library" ON)
+option(GAME_LIBRARY "Game library" ON)
+
 set(CAR_LIBRARY_NAME "carlib")
+set(GAME_LIBRARY_NAME "gamelib")
+
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # SUB DIRECTORIES
@@ -83,6 +87,6 @@ if(ENABLE_COMPONENT OR ENABLE_EVENT_QUEUE OR ENABLE_SERVICE_LOCATOR)
 endif()
 
 # car library
-if(CAR_LIBRARY)
+if(CAR_LIBRARY OR GAME_LIBRARY)
     add_subdirectory(libraries)
 endif()

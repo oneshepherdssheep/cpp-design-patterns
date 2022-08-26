@@ -1,0 +1,6 @@
+set(LIBRARY_SOURCES "gamelib.cpp")
+set(LIBRARY_HEADERS "gamelib.h")
+set(LIBRARY_INCLUDES "./")
+
+add_library(${GAME_LIBRARY_NAME} ${LIBRARY_SOURCES} ${LIBRARY_HEADERS})
+target_include_directories(${GAME_LIBRARY_NAME} PUBLIC ${LIBRARY_INCLUDES})
