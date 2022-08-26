@@ -16,5 +16,4 @@ namespace gamelib {
     }
 }
 
-
 #endif //CPP_DESIGN_PATTERNS_GAMELIB_H

@@ -11,7 +11,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 option(ENABLE_COMMAND               "Enable Command example"                ON)
 option(ENABLE_FLYWEIGHT             "Enable Flyweight example"              ON)
-option(ENABLE_OBSERVER              "Enable Observer example"               OFF)
+option(ENABLE_OBSERVER              "Enable Observer example"               ON)
 option(ENABLE_PROTOTYPE             "Enable Prototype example"              OFF)
 option(ENABLE_SINGLETON             "Enable Singleton example"              OFF)
 option(ENABLE_STATE                 "Enable State example"                  OFF)
