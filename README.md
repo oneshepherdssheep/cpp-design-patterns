@@ -53,3 +53,17 @@ examples that I devised for my understanding. If you want to get the exact examp
 * [Dirty Flag](optimization_patterns/dirty_flag/README.md) 🚧
 * [Object Pool](optimization_patterns/object_pool/README.md) 🚧
 * [Spatial Partition](optimization_patterns/spatial_partition/README.md) 🚧
+
+
+## How to build it ?
+
+After cloning the repository please proceed as follows:
+
+```shell
+cd cpp-design-patterns
+mkdir build
+cd build
+cmake ..
+make 
+```
+
