@@ -30,7 +30,7 @@ public:
         if(node->GetObserver() == observer){
             return false;
         }
-        
+
         // first node
         if(node!=nullptr && node->GetObserver()==nullptr){
             node->SetObserver(observer);
@@ -73,8 +73,9 @@ public:
             node = node->GetNextNode();
             if (node != nullptr) {
                 if (node->GetObserver() == observer) {
-                    node->SetObserver(nullptr);
                     previousNode->SetNextNode(node->GetNextNode());
+                    node->SetObserver(nullptr);
+                    node->SetNextNode(nullptr);
                     break;
                 }
             }
