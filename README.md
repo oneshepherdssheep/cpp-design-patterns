@@ -43,7 +43,7 @@ examples that I devised for my understanding. If you want to get the exact examp
 ### Decoupling Patterns
 
 * [Component](decoupling_patterns/component/README.md) 🚧
-* [Event Queue](decoupling_patterns/event_queue/README.md) 🚧
+* [Event Queue](decoupling_patterns/event_queue/README.md) ✅
 * [Service Locator](decoupling_patterns/service_locator/README.md) 🚧
 
 

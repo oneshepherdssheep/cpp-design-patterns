@@ -38,7 +38,7 @@ option(ENABLE_UPDATE_METHOD         "Enable Update Method example"          OFF)
 # decoupling patterns
 
 option(ENABLE_COMPONENT             "Enable Component example"              OFF)
-option(ENABLE_EVENT_QUEUE           "Enable Event Queue example"            OFF)
+option(ENABLE_EVENT_QUEUE           "Enable Event Queue example"            ON)
 option(ENABLE_SERVICE_LOCATOR       "Enable Service Locator example"        OFF)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -83,7 +83,7 @@ endif()
 # decoupling patterns
 
 if(ENABLE_COMPONENT OR ENABLE_EVENT_QUEUE OR ENABLE_SERVICE_LOCATOR)
-    add_subdirectory()
+    add_subdirectory(decoupling_patterns)
 endif()
 
 # car library
