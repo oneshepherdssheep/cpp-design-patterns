@@ -1,10 +1,17 @@
-# < design pattern name >
+# event queue
+
+## definition
 
 General definition : 
 
-> General definition 
+> Decouple when a message or event is sent from when it is processed.
 
 Personal definition :  
 
 > Personal definition
 
+## explanation
+
+
+
+## implementation
