@@ -85,3 +85,60 @@ SurveillanceBot *srvBot_5 = surveillanceBotSpawner->SpawnRobot();
 ...
 ```
 
+### v2 : a function pointer
+
+This is another way to come to the same result but not as Object Oriented as was the first implementation.
+Instead of having a prototype instance as private members, we have a callback to the method used to create 
+new instances.
+
+```c++
+typedef Robot* (*SpawnCallback)();
+
+class RobotSpawnerV2 {
+public:
+    explicit RobotSpawnerV2(SpawnCallback spawnCallback): spawnCallback_m(spawnCallback){
+        std::cout << "[spawner-v2] spawner created" << std::endl;
+    }
+    Robot* spawnRobot(){ return spawnCallback_m();}
+private:
+    SpawnCallback spawnCallback_m;
+};
+```
+
+When using this, we need of course a callback method:
+```c++
+SurveillanceBot * spawnSurveillanceBot(){
+    return new SurveillanceBot();
+}
+```
+
+With this method we can instantiate our ```RobotSpawnerV2``` :
+
+```c++
+RobotSpawnerV2 * surveillanceRobotSpawnerV2 = new RobotSpawnerV2(spawnSurveillanceBot);
+SurveillanceBot* srvBot = surveillanceRobotSpawnerV2->spawnRobot();
+```
+
+### v3 : a template class
+
+This is the simplest way in my opinion even though it is not the classic way to implement this 
+Design Pattern:
+
+```c++
+template<typename T>
+class Spawner {
+    public:
+        explicit Spawner() { std::cout << "[spawner] spawner instantiated" << std::endl; }
+        T* SpawnRobot() { return new T(); }
+};
+```
+
+
+## conclusion
+
+I understand the practicability of such Design Pattern, however, at this very moment I've rarely seen it
+and thus don't really know where I will be using it in real scenarios.
+
+However, I cannot recommend enough reading what Robert Nystrom has to said about it in his wonderful book.
+Here is the link for the corresponding chapter : 
+[Game Programming Patterns - Prototype](https://gameprogrammingpatterns.com/prototype.html).
