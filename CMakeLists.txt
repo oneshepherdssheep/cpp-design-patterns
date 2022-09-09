@@ -14,7 +14,7 @@ option(ENABLE_FLYWEIGHT             "Enable Flyweight example"              ON)
 option(ENABLE_OBSERVER              "Enable Observer example"               ON)
 option(ENABLE_PROTOTYPE             "Enable Prototype example"              ON)
 option(ENABLE_SINGLETON             "Enable Singleton example"              ON)
-option(ENABLE_STATE                 "Enable State example"                  OFF)
+option(ENABLE_STATE                 "Enable State example"                  ON)
 
 # behavioral patterns
 
