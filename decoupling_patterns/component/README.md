@@ -13,8 +13,8 @@ Definition from the book :
 
 Personal definition :  
 
-> If an entity handles multiple domains, create separated/isolated component so that this
-> entity will incorporate them (like a container) safely.
+> If an entity handles multiple domains, create separated/isolated components so that this
+> entity will incorporate them (like a container) to safely use them.
 
 ## explanations
 
