@@ -1,3 +1,5 @@
+<a id="top"></a>
+![Linux/CMake](https://github.com/oneshepherdssheep/cpp-design-patterns/actions/workflows/linux.yml/badge.svg)
 # Design Patterns
 
 ## What is this repository about ?
