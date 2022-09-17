@@ -12,12 +12,13 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
 
       - name: configure
-      - run: cmake -S ${{github.workspace}} -B ${{github.workspace}}/build
+        run: cmake -S ${{github.workspace}} -B ${{github.workspace}}/build
 
       - name: build
-      - run: cmake --build ${{github.workspace}}/build
+        run: cmake --build ${{github.workspace}}/build
 
