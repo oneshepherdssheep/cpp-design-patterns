@@ -63,9 +63,7 @@ After cloning the repository please proceed as follows:
 
 ```shell
 cd cpp-design-patterns
-mkdir build
-cd build
-cmake ..
-make 
+cmake -S . -B build
+cmake --build build
 ```
 
