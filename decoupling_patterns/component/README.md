@@ -18,6 +18,12 @@ Personal definition :
 
 ## explanations
 
+There is not much of additional explanations here, the goal is separate the domains
+by having dedicated classes and use them in another class as instance members.
 
 ## implementations
 
+For the implementation, I will go a bit beyond what is usually implemented,
+I will implement a snake game called "cpp-snake".
+
+It will allow me to see how we this pattern suit for a real world example.
