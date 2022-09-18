@@ -37,7 +37,7 @@ option(ENABLE_UPDATE_METHOD         "Enable Update Method example"          OFF)
 
 # decoupling patterns
 
-option(ENABLE_COMPONENT             "Enable Component example"              OFF)
+option(ENABLE_COMPONENT             "Enable Component example"              ON)
 option(ENABLE_EVENT_QUEUE           "Enable Event Queue example"            ON)
 option(ENABLE_SERVICE_LOCATOR       "Enable Service Locator example"        OFF)
 
