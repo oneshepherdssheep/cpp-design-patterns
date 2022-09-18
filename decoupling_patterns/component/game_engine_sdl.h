@@ -15,7 +15,8 @@ public:
     void SetupScene() override;
     void InitGraphics() override;
     void DisplayScene() override;
-    void ProcessInput(GameEngine::KeyBoardEvent &keyboardEvent) override;
+    void ProcessInput() override;
+    GameEngine::KeyBoardEvent GetLastKeyboardEvent() const override;
 
 private:
     GameEngine::KeyBoardEvent ProcessKeyboardEvent(SDL_Keycode keyCode);
@@ -24,6 +25,7 @@ private:
     SDL_Renderer *sdlRenderer_m;
     SDL_Window *sdlWindow_m;
     std::string name_m;
+    GameEngine::KeyBoardEvent keyboardEvent_m;
 };
 
 

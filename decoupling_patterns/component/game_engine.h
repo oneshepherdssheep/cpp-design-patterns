@@ -24,7 +24,8 @@ class GameEngine {
         virtual void SetupScene() = 0;
         virtual void InitGraphics() = 0;
         virtual void DisplayScene() = 0;
-        virtual void ProcessInput(GameEngine::KeyBoardEvent &keyboardEvent) = 0;
+        virtual void ProcessInput() = 0;
+        virtual GameEngine::KeyBoardEvent GetLastKeyboardEvent() const = 0;
 };
 
 #endif //CPP_DESIGN_PATTERNS_GAME_ENGINE_H

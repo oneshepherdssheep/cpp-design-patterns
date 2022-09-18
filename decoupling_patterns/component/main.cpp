@@ -8,15 +8,14 @@
 int main( int argc, char* args[] )
 {
     GameEngine * gameEngine;
-    gameEngine = new GameEngineSDL("cpp-snake",420,240); // OG : 84 x 48
+    gameEngine = new GameEngineSDL("cpp-snake-3110",840,480); // OG : 84 x 48
 
     gameEngine->InitGraphics();
 
 
     while(1){
-        GameEngine::KeyBoardEvent keyboardEvent;
         gameEngine->SetupScene();
-        gameEngine->ProcessInput(keyboardEvent);
+        gameEngine->ProcessInput();
         gameEngine->DisplayScene();
         std::this_thread::sleep_for(std::chrono::milliseconds (16));
 

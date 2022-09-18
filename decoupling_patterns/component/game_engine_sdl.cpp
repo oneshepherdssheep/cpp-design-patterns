@@ -60,14 +60,15 @@ void GameEngineSDL::InitGraphics() {
 
 }
 
-void GameEngineSDL::ProcessInput(GameEngine::KeyBoardEvent &keyboardEvent) {
+void GameEngineSDL::ProcessInput() {
     SDL_Event event;
 
     while(SDL_PollEvent(&event)){
+        keyboardEvent_m = GameEngine::KeyBoardEvent::NONE;
         switch(event.type){
             /* Key released */
             case SDL_KEYUP:
-                keyboardEvent = ProcessKeyboardEvent(event.key.keysym.sym);
+                keyboardEvent_m = ProcessKeyboardEvent(event.key.keysym.sym);
                 break;
 
             /* Key pressed
@@ -82,14 +83,13 @@ void GameEngineSDL::ProcessInput(GameEngine::KeyBoardEvent &keyboardEvent) {
                 break;
 
             default:
-                keyboardEvent = GameEngine::KeyBoardEvent::NONE;
                 break;
         }
     }
 }
 
 void GameEngineSDL::SetupScene() {
-    SDL_SetRenderDrawColor(sdlRenderer_m,16, 172, 132,1);//color https://flatuicolors.com/palette/ca
+    SDL_SetRenderDrawColor(sdlRenderer_m,50, 168, 82,1);
     SDL_RenderClear(sdlRenderer_m);
 }
 
@@ -120,6 +120,11 @@ GameEngine::KeyBoardEvent GameEngineSDL::ProcessKeyboardEvent(SDL_Keycode keyCod
             break;
     }
 }
+
+GameEngine::KeyBoardEvent GameEngineSDL::GetLastKeyboardEvent() const {
+    return keyboardEvent_m;
+}
+
 
 
 
