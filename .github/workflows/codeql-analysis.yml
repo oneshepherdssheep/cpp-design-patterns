@@ -38,7 +38,7 @@ jobs:
 
     steps:
     - name: Install SDL2
-      run: apt-get install libsdl2-dev
+      run: sudo apt-get install libsdl2-dev
       
     - name: Checkout repository
       uses: actions/checkout@v3
