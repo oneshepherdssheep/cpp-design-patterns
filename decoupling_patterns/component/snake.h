@@ -12,8 +12,8 @@ class Snake {
         explicit Snake(uint32_t initialX, uint32_t initialY);
         uint32_t GetX() const;
         uint32_t GetY() const;
-        uint32_t SetX(const uint32_t newX);
-        uint32_t SetY(const uint32_t newY);
+        void SetX(const uint32_t newX);
+        void SetY(const uint32_t newY);
     private:
         uint32_t x_m;
         uint32_t y_m;
