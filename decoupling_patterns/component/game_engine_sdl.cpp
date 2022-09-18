@@ -60,26 +60,21 @@ void GameEngineSDL::InitGraphics() {
 
 }
 
-void GameEngineSDL::ProcessInput() {
+void GameEngineSDL::ProcessInput(GameEngine::KeyBoardEvent &keyboardEvent) {
     SDL_Event event;
 
     while(SDL_PollEvent(&event)){
         switch(event.type){
-            case SDLK_UP:
-                std::cout << "[game_engine_sdl] UP has been pressed." << std::endl;
+            /* Key released */
+            case SDL_KEYUP:
+                keyboardEvent = ProcessKeyboardEvent(event.key.keysym.sym);
                 break;
 
-            case SDLK_DOWN:
-                std::cout << "[game_engine_sdl] DOWN has been pressed." << std::endl;
+            /* Key pressed
+            case SDL_KEYDOWN:
+                keyboardEvent = GameEngine::KeyBoardEvent::NONE;
                 break;
-
-            case SDLK_LEFT:
-                std::cout << "[game_engine_sdl] LEFT has been pressed." << std::endl;
-                break;
-
-            case SDLK_RIGHT:
-                std::cout << "[game_engine_sdl] RIGHT has been pressed." << std::endl;
-                break;
+            */
 
             case SDL_QUIT:
                 std::cout << "[game_engine_sdl] terminate the game!" << std::endl;
@@ -87,6 +82,7 @@ void GameEngineSDL::ProcessInput() {
                 break;
 
             default:
+                keyboardEvent = GameEngine::KeyBoardEvent::NONE;
                 break;
         }
     }
@@ -99,6 +95,30 @@ void GameEngineSDL::SetupScene() {
 
 void GameEngineSDL::DisplayScene() {
     SDL_RenderPresent(sdlRenderer_m);
+}
+
+GameEngine::KeyBoardEvent GameEngineSDL::ProcessKeyboardEvent(SDL_Keycode keyCode){
+    switch(keyCode){
+        case SDLK_RIGHT:
+            return GameEngine::KeyBoardEvent::RIGHT;
+            break;
+
+        case SDLK_LEFT:
+            return GameEngine::KeyBoardEvent::LEFT;
+            break;
+
+        case SDLK_UP:
+            return GameEngine::KeyBoardEvent::UP;
+            break;
+
+        case SDLK_DOWN:
+            return GameEngine::KeyBoardEvent::DOWN;
+            break;
+
+        default:
+            return GameEngine::KeyBoardEvent::NONE;
+            break;
+    }
 }
 
 

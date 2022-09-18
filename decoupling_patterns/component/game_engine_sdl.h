@@ -15,9 +15,10 @@ public:
     void SetupScene() override;
     void InitGraphics() override;
     void DisplayScene() override;
-    void ProcessInput() override;
+    void ProcessInput(GameEngine::KeyBoardEvent &keyboardEvent) override;
 
 private:
+    GameEngine::KeyBoardEvent ProcessKeyboardEvent(SDL_Keycode keyCode);
     int windowWidth_m;
     int windowHeight_m;
     SDL_Renderer *sdlRenderer_m;

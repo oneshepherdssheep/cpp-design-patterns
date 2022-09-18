@@ -12,9 +12,11 @@ int main( int argc, char* args[] )
 
     gameEngine->InitGraphics();
 
+
     while(1){
+        GameEngine::KeyBoardEvent keyboardEvent;
         gameEngine->SetupScene();
-        gameEngine->ProcessInput();
+        gameEngine->ProcessInput(keyboardEvent);
         gameEngine->DisplayScene();
         std::this_thread::sleep_for(std::chrono::milliseconds (16));
 
