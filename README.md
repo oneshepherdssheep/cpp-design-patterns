@@ -23,12 +23,12 @@ examples that I devised for my understanding. If you want to get the exact examp
 
 ### Design Patterns Revisited
 
-* [Command](design_patterns_revisited/command/README.md) ✅
-* [Flyweight](design_patterns_revisited/flyweight/README.md) ✅
-* [Observer](design_patterns_revisited/observer/README.md) ✅
-* [Prototype](design_patterns_revisited/prototype/README.md) ✅
-* [Singleton](design_patterns_revisited/singleton/README.md) ✅
-* [State](design_patterns_revisited/state/README.md) ✅
+* [Command](design_patterns_revisited/command/README.md) ✔
+* [Flyweight](design_patterns_revisited/flyweight/README.md) ✔
+* [Observer](design_patterns_revisited/observer/README.md) ✔
+* [Prototype](design_patterns_revisited/prototype/README.md) ✔
+* [Singleton](design_patterns_revisited/singleton/README.md) ✔
+* [State](design_patterns_revisited/state/README.md) ✔
 
 ### Sequencing Patterns
 
@@ -46,7 +46,7 @@ examples that I devised for my understanding. If you want to get the exact examp
 ### Decoupling Patterns
 
 * [Component](decoupling_patterns/component/README.md) 🚧
-* [Event Queue](decoupling_patterns/event_queue/README.md) ✅
+* [Event Queue](decoupling_patterns/event_queue/README.md) ✔
 * [Service Locator](decoupling_patterns/service_locator/README.md) 🚧
 
 
