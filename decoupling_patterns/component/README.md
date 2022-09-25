@@ -25,36 +25,11 @@ by having dedicated classes and use them in another class as instance members.
 
 ### introduction
 
-For the implementation, I will go a bit beyond what is usually implemented,
-I will implement a snake game called "cpp-snake".
+For the implementation, I will implement a very basic fake game engine.
+The goal is not to implement a real game engine but to illustrate the
+usefulness of the design pattern component.
 
-It will allow me to see how we this pattern suit for a real world example.
+The game I have chosen is snake.
 
-### cpp-snake 🐍
+I might do a full implementation, but it will be in another project.
 
-![snake](../../assets/snake-3310-logo.png)
-
-cpp-snake is a clone of the iconic snake game available on [Nokia 3310](https://en.wikipedia.org/wiki/Nokia_3310).
-
-#### gameplay
-
-Using the keyboard arrows ⬆️⬇️➡️⬅️, move the snake to eat as much food
-as possible while not eating yourself.
-
-#### game engine
-
-#### design
-
-Here are the components which will be developed:
-- InputComponent
-- GraphicsComponent
-- PhysicsComponent
-- Snake
-- World
-- Score
-- etc.
-
-```mermaid
-  classDiagram
-  GameEngine <|-- GameEngineSDL
-```
