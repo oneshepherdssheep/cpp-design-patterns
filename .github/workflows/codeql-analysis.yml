@@ -37,9 +37,6 @@ jobs:
         # Learn more about CodeQL language support at https://aka.ms/codeql-docs/language-support
 
     steps:
-    - name: Install SDL2
-      run: sudo apt-get install libsdl2-dev
-      
     - name: Checkout repository
       uses: actions/checkout@v3
 
