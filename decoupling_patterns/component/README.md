@@ -53,3 +53,8 @@ Here are the components which will be developed:
 - World
 - Score
 - etc.
+
+```mermaid
+  classDiagram
+  GameEngine <|-- GameEngineSDL
+```
