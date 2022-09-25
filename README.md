@@ -1,7 +1,7 @@
 <a id="top"></a>
 ![linux](https://github.com/oneshepherdssheep/cpp-design-patterns/actions/workflows/linux.yml/badge.svg)
 ![linux](https://github.com/oneshepherdssheep/cpp-design-patterns/actions/workflows/codeql-analysis.yml/badge.svg)
-![openssf best practices](https://bestpractices.coreinfrastructure.org/en/projects/6517)
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/6517/badge)](https://bestpractices.coreinfrastructure.org/projects/6517)
 # Design Patterns
 
 ## What is this repository about ?
