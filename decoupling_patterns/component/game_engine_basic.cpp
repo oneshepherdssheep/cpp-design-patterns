@@ -3,6 +3,7 @@
 //
 
 #include "game_engine_basic.h"
+#include "gamelib.h"
 
 GameEngineBasic::GameEngineBasic(const char * name,int windowWidth, int windowHeight):
         windowHeight_m(windowHeight),
@@ -15,11 +16,32 @@ GameEngineBasic::~GameEngineBasic(){
 }
 
 void GameEngineBasic::InitGraphics() {
-    // TODO : write code here
+    std::cout << "[game_engine_basic] initialize graphics." << std::endl;
+
 }
 
 void GameEngineBasic::ProcessInput() {
     // TODO : write code here
+    switch(gamelib::GetDiceRoll<6>()){
+        case 1:
+            std::cout << "[game_engine_basic] UP was pressed" << std::endl;
+            break;
+        case 2:
+            std::cout << "[game_engine_basic] DOWN was pressed" << std::endl;
+            break;
+        case 3:
+            std::cout << "[game_engine_basic] LEFT was pressed" << std::endl;
+            break;
+        case 4:
+            std::cout << "[game_engine_basic] RIGHT was pressed" << std::endl;
+            break;
+        case 5:
+            std::cout << "[game_engine_basic] SPACE was pressed" << std::endl;
+            break;
+        case 6:
+        default:
+            break;
+    }
 }
 
 void GameEngineBasic::SetupScene() {
