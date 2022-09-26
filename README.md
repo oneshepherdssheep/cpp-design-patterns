@@ -21,42 +21,58 @@ examples that I devised for my understanding. If you want to get the exact examp
 (the book is freely available in html format but, I would suggest to buy the book because it is a good book :) )
 
 ## Design Patterns Categories
+- [Design Patterns Revisited](#design-patterns-revisited)
+- [Sequencing Patterns](#sequencing-patterns)
+- [Behavioral Patterns](#behavioral-patterns)
+- [Decoupling Patterns](#decoupling-patterns)
+- [Optimization Patterns](#optimization-patterns)
+
 
 ### Design Patterns Revisited
 
-* [Command](design_patterns_revisited/command/README.md) ✔
-* [Flyweight](design_patterns_revisited/flyweight/README.md) ✔
-* [Observer](design_patterns_revisited/observer/README.md) ✔
-* [Prototype](design_patterns_revisited/prototype/README.md) ✔
-* [Singleton](design_patterns_revisited/singleton/README.md) ✔
-* [State](design_patterns_revisited/state/README.md) ✔
+| Design Pattern                                             | Status |
+|------------------------------------------------------------|--------|
+| [Command](design_patterns_revisited/command/README.md)     | ✔      | 
+| [Flyweight](design_patterns_revisited/flyweight/README.md) | ✔      | 
+| [Observer](design_patterns_revisited/observer/README.md)   | ✔      | 
+| [Prototype](design_patterns_revisited/prototype/README.md) | ✔      | 
+| [Singleton](design_patterns_revisited/singleton/README.md) | ✔      | 
+| [State](design_patterns_revisited/state/README.md)         | ✔      | 
 
 ### Sequencing Patterns
 
-* [Double Buffer](sequencing_patterns/double_buffer/README.md) 🚧
-* [Game Loop](sequencing_patterns/game_loop/README.md) 🚧
-* [Update Method](sequencing_patterns/update_method/README.md) 🚧
+| Design Pattern                                               | Status |
+|--------------------------------------------------------------|--------|
+| [Double Buffer](sequencing_patterns/double_buffer/README.md) | 🚧     | 
+| [Game Loop](sequencing_patterns/game_loop/README.md)         | 🚧     | 
+| [Update Method](sequencing_patterns/update_method/README.md) | 🚧     | 
 
 ### Behavioral Patterns
 
-* [Bytecode](behavioral_patterns/bytecode/README.md) 🚧
-* [Subclass Sandbox](behavioral_patterns/subclass_sandbox/README.md) 🚧
-* [Type Object](behavioral_patterns/type_object/README.md) 🚧
+| Design Pattern                                                     | Status |
+|--------------------------------------------------------------------|--------|
+| [Bytecode](behavioral_patterns/bytecode/README.md)                 | 🚧     | 
+| [Subclass Sandbox](behavioral_patterns/subclass_sandbox/README.md) | 🚧     | 
+| [Type Object](behavioral_patterns/type_object/README.md)           | 🚧     | 
 
 
 ### Decoupling Patterns
 
-* [Component](decoupling_patterns/component/README.md) 🚧
-* [Event Queue](decoupling_patterns/event_queue/README.md) ✔
-* [Service Locator](decoupling_patterns/service_locator/README.md) 🚧
+| Design Pattern                                                      | Status |
+|---------------------------------------------------------------------|--------|
+| [Component](decoupling_patterns/component/README.md)                | 🚧     |
+| [Event Queue](decoupling_patterns/event_queue/README.md)            | ✔      |
+| [Service Locator](decoupling_patterns/service_locator/README.md)    | 🚧     | 
 
 
 ### Optimization Patterns
 
-* [Data Locality](optimization_patterns/data_locality/README.md) 🚧
-* [Dirty Flag](optimization_patterns/dirty_flag/README.md) 🚧
-* [Object Pool](optimization_patterns/object_pool/README.md) 🚧
-* [Spatial Partition](optimization_patterns/spatial_partition/README.md) 🚧
+| Design Pattern                                                         | Status |
+|------------------------------------------------------------------------|--------|
+| [Data Locality](optimization_patterns/data_locality/README.md)         | 🚧     |
+| [Dirty Flag](optimization_patterns/dirty_flag/README.md)               | 🚧     |
+| [Object Pool](optimization_patterns/object_pool/README.md)             | 🚧     |
+| [Spatial Partition](optimization_patterns/spatial_partition/README.md) | 🚧     |
 
 
 ## How to build it ?
