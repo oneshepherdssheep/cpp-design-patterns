@@ -1,55 +1,50 @@
+// This is an independent project of an individual developer. Dear PVS-Studio, please check it.
+
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: http://www.viva64.com
 //
 // Created by oneshepherdssheep on 25/08/22.
 //
 
 #include "terrain.h"
 
-// Terrain
-Terrain::Terrain() {
+namespace terrain {
 
-}
+// Terrain
+    terrain::Terrain::Terrain() = default;
 
 // RoadTerrain
-RoadTerrain::RoadTerrain(){
+    terrain::RoadTerrain::RoadTerrain() = default;
 
-}
-
-bool RoadTerrain::IsAccessibleTo(const MapUser& mapUser) const {
-    return mapUser.CanAccessRoad();
-}
+    bool terrain::RoadTerrain::IsAccessibleTo(const map_user::MapUser &mapUser) const {
+        return mapUser.CanAccessRoad();
+    }
 
 // LandTerrain
-LandTerrain::LandTerrain(){
+    terrain::LandTerrain::LandTerrain() = default;
 
-}
-
-bool LandTerrain::IsAccessibleTo(const MapUser &mapUser) const {
-    return mapUser.CanAccessLand();
-}
+    bool terrain::LandTerrain::IsAccessibleTo(const map_user::MapUser &mapUser) const {
+        return mapUser.CanAccessLand();
+    }
 
 // MountainTerrain
-MountainTerrain::MountainTerrain(){
+    terrain::MountainTerrain::MountainTerrain() = default;
 
-}
-
-bool MountainTerrain::IsAccessibleTo(const MapUser &mapUser) const {
-    return mapUser.CanAccessMountain();
-}
+    bool terrain::MountainTerrain::IsAccessibleTo(const map_user::MapUser &mapUser) const {
+        return mapUser.CanAccessMountain();
+    }
 
 // EnclosedAreaTerrain
-EnclosedAreaTerrain::EnclosedAreaTerrain(){
+    terrain::EnclosedAreaTerrain::EnclosedAreaTerrain() = default;
 
-}
-
-bool EnclosedAreaTerrain::IsAccessibleTo(const MapUser &mapUser) const {
-    return mapUser.CanAccessEnclosedArea();
-}
+    bool terrain::EnclosedAreaTerrain::IsAccessibleTo(const map_user::MapUser &mapUser) const {
+        return mapUser.CanAccessEnclosedArea();
+    }
 
 // WaterTerrain
-WaterTerrain::WaterTerrain(){
+    terrain::WaterTerrain::WaterTerrain() = default;
 
+    bool terrain::WaterTerrain::IsAccessibleTo(const map_user::MapUser &mapUser) const {
+        return mapUser.CanAccessWater();
+    }
 }
 
-bool WaterTerrain::IsAccessibleTo(const MapUser& mapUser) const {
-    return mapUser.CanAccessWater();
-}
