@@ -6,7 +6,6 @@
 //
 
 #include <cstdio>
-#include <cmath>
 #include <thread>
 #include "event.h"
 #include "audio_fx.h"
