@@ -1,6 +1,7 @@
 <a id="top"></a>
 ![linux](https://github.com/oneshepherdssheep/cpp-design-patterns/actions/workflows/linux.yml/badge.svg)
-![linux](https://github.com/oneshepherdssheep/cpp-design-patterns/actions/workflows/codeql-analysis.yml/badge.svg)
+![codeql](https://github.com/oneshepherdssheep/cpp-design-patterns/actions/workflows/codeql-analysis.yml/badge.svg)
+![pvs-studio](https://github.com/oneshepherdssheep/cpp-design-patterns/actions/workflows/pvs-studio-build-analyze.yml/badge.svg)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/6517/badge)](https://bestpractices.coreinfrastructure.org/projects/6517)
 # Design Patterns
 
