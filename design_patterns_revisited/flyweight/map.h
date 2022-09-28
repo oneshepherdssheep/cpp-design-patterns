@@ -65,7 +65,7 @@ public:
         }
     }
 
-    bool IsTerrainAccessibleTo(const MapUser& mapUser,const std::size_t x,const std::size_t y){
+    bool IsTerrainAccessibleTo(const map_user::MapUser& mapUser,const std::size_t x,const std::size_t y){
         if((x < WIDTH) && (y < HEIGHT)){
             return tiles_m[x][y]->IsAccessibleTo(mapUser);
         }
@@ -89,12 +89,12 @@ public:
     }
 
 private:
-    Terrain * tiles_m[WIDTH][HEIGHT];
-    RoadTerrain roadTerrain_m;
-    LandTerrain landTerrain_m;
-    MountainTerrain mountainTerrain_m;
-    WaterTerrain waterTerrain_m;
-    EnclosedAreaTerrain enclosedAreaTerrain_m;
+    terrain::Terrain * tiles_m[WIDTH][HEIGHT];
+    terrain::RoadTerrain roadTerrain_m;
+    terrain::LandTerrain landTerrain_m;
+    terrain::MountainTerrain mountainTerrain_m;
+    terrain::WaterTerrain waterTerrain_m;
+    terrain::EnclosedAreaTerrain enclosedAreaTerrain_m;
 };
 
 

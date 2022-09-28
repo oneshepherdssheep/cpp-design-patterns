@@ -7,12 +7,15 @@
 
 #include <cstdint>
 
-class Texture {
-public:
-    Texture();
-private:
-    uint16_t dummy_m;
-};
+namespace texture {
+    class Texture {
+    public:
+        Texture() = default;
+
+    private:
+        uint16_t dummy_m;
+    };
+}
 
 
 #endif //CPP_DESIGN_PATTERNS_TEXTURE_H
