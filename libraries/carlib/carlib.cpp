@@ -9,7 +9,10 @@
 
 
 Car::Car(const uint64_t id):
-id_m(id){
+id_m(id),
+direction_m{NONE},
+engineState_m{STOPPED},
+hornState_m{false}{
     std::cout << PrintCarIdentification() << " instantiated." << std::endl;
 }
 

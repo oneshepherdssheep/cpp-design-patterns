@@ -89,7 +89,7 @@ public:
     }
 
 private:
-    terrain::Terrain * tiles_m[WIDTH][HEIGHT];
+    terrain::Terrain * tiles_m[WIDTH][HEIGHT]; //-V730_NOINIT
     terrain::RoadTerrain roadTerrain_m;
     terrain::LandTerrain landTerrain_m;
     terrain::MountainTerrain mountainTerrain_m;
