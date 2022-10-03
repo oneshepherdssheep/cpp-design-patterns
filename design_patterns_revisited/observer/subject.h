@@ -27,7 +27,7 @@ public:
         ObserverNode* previousNode = headNode_m;
 
         // observer is already added
-        if(node->GetObserver() == observer){
+        if(node!=nullptr && node->GetObserver() == observer){
             return false;
         }
 

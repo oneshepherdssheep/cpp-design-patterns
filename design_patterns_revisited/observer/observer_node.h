@@ -12,7 +12,8 @@ class ObserverNode {
 public:
 
     ObserverNode() :
-    observer_m(nullptr){
+    observer_m{nullptr},
+    next_m{nullptr}{
 
     }
 

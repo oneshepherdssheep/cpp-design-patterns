@@ -24,6 +24,7 @@ enum CarCommandId : std::uint16_t {
  *
  */
 enum CarDirection : std::uint8_t {
+    NONE,
     LEFT,
     RIGHT,
     FORWARD,
