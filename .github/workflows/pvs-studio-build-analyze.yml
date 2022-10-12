@@ -1,12 +1,13 @@
 name: PVS-Studio build analysis
 on: workflow_dispatch
 jobs:
-  build-analyze:
+  build_and_analyze_code:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository code
+      - name: checkout_repository_code
         uses: actions/checkout@v2
-      - name: Install tools
+        
+      - name: install_pvs_tools
         run: |
           wget -q -O - https://files.pvs-studio.com/etc/pubkey.txt \
             | sudo apt-key add -
@@ -15,17 +16,23 @@ jobs:
           sudo apt update
           sudo apt install pvs-studio
           pvs-studio-analyzer credentials ${{ secrets.PVS_STUDIO_FREE_CREDENTIALS }}
-      - name: Build
+          
+      - name: build_project
         run: |
           cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=On -B build .
           cmake --build build -j
-      - name: Analyze
+          
+      - name: analyze_project
         run: |
           pvs-studio-analyzer analyze -f build/compile_commands.json -j
-      - name: Convert report
+          
+      - name: convert_report
         run: |
           plog-converter -t sarif -o pvs-report.sarif PVS-Studio.log
-      - name: Publish report
+          echo "( print report )"
+          cat pvs-report.sarif
+          
+      - name: publish_report
         uses: github/codeql-action/upload-sarif@v2
         with:
           sarif_file: pvs-report.sarif
