@@ -55,6 +55,7 @@ examples that I devised for my understanding. If you want to get the exact examp
 | [Bytecode](behavioral_patterns/bytecode/README.md)                 | 🚧     | 
 | [Subclass Sandbox](behavioral_patterns/subclass_sandbox/README.md) | 🚧     | 
 | [Type Object](behavioral_patterns/type_object/README.md)           | 🚧     | 
+| [Strategy](behavioral_patterns/strategy/README.md)                 | ✔      |
 
 
 ### Decoupling Patterns

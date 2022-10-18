@@ -9,3 +9,7 @@ endif()
 if(ENABLE_TYPE_OBJECT)
     add_subdirectory(type_object)
 endif()
+
+if(ENABLE_STRATEGY)
+    add_subdirectory(strategy)
+endif()

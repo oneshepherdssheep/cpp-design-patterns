@@ -21,6 +21,7 @@ option(ENABLE_STATE                 "Enable State example"                  ON)
 option(ENABLE_BYTECODE              "Enable Bytecode example"               OFF)
 option(ENABLE_SUBCLASS_SANDBOX      "Enable Subclass Sandbox example"       OFF)
 option(ENABLE_TYPE_OBJECT           "Enable Type Object example"            OFF)
+option(ENABLE_STRATEGY              "Enable Strategy example"               ON)
 
 # optimization patterns
 
@@ -64,20 +65,20 @@ endif()
 
 # behavioral patterns
 
-if(ENABLE_BYTECODE OR ENABLE_SUBCLASS_SANDBOX OR ENABLE_TYPE_OBJECT )
-    add_subdirectory()
+if(ENABLE_BYTECODE OR ENABLE_SUBCLASS_SANDBOX OR ENABLE_TYPE_OBJECT OR ENABLE_STRATEGY )
+    add_subdirectory(behavioral_patterns)
 endif()
 
 # optimization patterns
 
 if(ENABLE_DATA_LOCALITY OR ENABLE_DIRTY_FLAG OR ENABLE_OBJECT_POOL OR ENABLE_SPATIAL_PARTITION)
-    add_subdirectory()
+    add_subdirectory(optimization_patterns)
 endif()
 
 # sequencing patterns
 
 if(ENABLE_DOUBLE_BUFFER OR ENABLE_GAME_LOOP OR ENABLE_UPDATE_METHOD)
-    add_subdirectory()
+    add_subdirectory(sequencing_patterns)
 endif()
 
 # decoupling patterns
